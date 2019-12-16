@@ -17,7 +17,7 @@ var MONGO_URI = process.env.MONGO_URI || "mongodb://localhost/googlebooks";
 mongoose.connect(MONGO_URI);
 
 // Define API routes here
-require("./routes/apiRoutes");
+require("./routes/apiRoutes")(app);
 
 // Send every other request to the React app
 // Define any API routes before this runs

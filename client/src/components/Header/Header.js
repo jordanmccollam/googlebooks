@@ -23,8 +23,6 @@ function Header() {
                 <span className="text-success">c</span>
                 <span className="text-danger">h</span>
             </h1>
-            <button className="btn btn-primary px-5 mr-2">Search</button>
-            <button className="btn btn-outline-primary px-5">Saved</button>
         </div>
     );
 }

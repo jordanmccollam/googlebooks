@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./style.css";
 import Search from "../Search";
 import axios from "axios";
 import API from "../../utils/API";
@@ -77,17 +76,17 @@ class Results extends Component {
                             <h2 className="border-bottom border-primary text-primary mb-3">Search</h2>
 
                             {/* BOOK 1 */}
-                            <div class="card">
-                                <h5 class="card-header">{this.state.books[0].title}</h5>
-                                <div class="card-body row">
+                            <div className="card">
+                                <h5 className="card-header">{this.state.books[0].title}</h5>
+                                <div className="card-body row">
                                     <div className="col-lg-3 d-none d-lg-block">
-                                        <img width src={this.state.books[0].image} alt="book" />
+                                        <img src={this.state.books[0].image} alt="book" />
                                     </div>
                                     <div className="col-lg-9 flex-column d-flex text-right">
-                                        <h5 class="card-title font-italic text-left">- By {this.state.books[0].authors} </h5>
-                                        <p class="card-text text-left">{this.state.books[0].description} </p>
+                                        <h5 className="card-title font-italic text-left">- By {this.state.books[0].authors} </h5>
+                                        <p className="card-text text-left">{this.state.books[0].description} </p>
                                         <div className="mt-auto ml-auto">
-                                            <a href={this.state.books[0].link} target="blank" class="btn btn-primary mr-3">Check It Out</a>
+                                            <a href={this.state.books[0].link} target="blank" className="btn btn-primary mr-3">Check It Out</a>
                                             <button className="btn btn-success" onClick={() => this.saveBook(0)}>Save </button>
                                         </div>
                                     </div>
@@ -95,17 +94,17 @@ class Results extends Component {
                             </div>
 
                             {/* BOOK 2 */}
-                            <div class="card mt-3">
-                                <h5 class="card-header">{this.state.books[1].title}</h5>
-                                <div class="card-body row">
+                            <div className="card mt-3">
+                                <h5 className="card-header">{this.state.books[1].title}</h5>
+                                <div className="card-body row">
                                     <div className="col-lg-3 d-none d-lg-block">
-                                        <img width src={this.state.books[1].image} alt="book" />
+                                        <img src={this.state.books[1].image} alt="book" />
                                     </div>
                                     <div className="col-lg-9 flex-column d-flex text-right">
-                                        <h5 class="card-title font-italic text-left">- By {this.state.books[1].authors} </h5>
-                                        <p class="card-text text-left">{this.state.books[1].description} </p>
+                                        <h5 className="card-title font-italic text-left">- By {this.state.books[1].authors} </h5>
+                                        <p className="card-text text-left">{this.state.books[1].description} </p>
                                         <div className="mt-auto ml-auto">
-                                            <a href={this.state.books[1].link} target="blank" class="btn btn-primary mr-3">Check It Out</a>
+                                            <a href={this.state.books[1].link} target="blank" className="btn btn-primary mr-3">Check It Out</a>
                                             <button className="btn btn-success" onClick={() => this.saveBook(1)}>Save </button>
                                         </div>
                                     </div>
@@ -113,17 +112,17 @@ class Results extends Component {
                             </div>
 
                             {/* BOOK 3 */}
-                            <div class="card mt-3">
-                                <h5 class="card-header">{this.state.books[2].title}</h5>
-                                <div class="card-body row">
+                            <div className="card mt-3">
+                                <h5 className="card-header">{this.state.books[2].title}</h5>
+                                <div className="card-body row">
                                     <div className="col-lg-3 d-none d-lg-block">
-                                        <img width src={this.state.books[2].image} alt="book" />
+                                        <img src={this.state.books[2].image} alt="book" />
                                     </div>
                                     <div className="col-lg-9 flex-column d-flex text-right">
-                                        <h5 class="card-title font-italic text-left">- By {this.state.books[2].authors} </h5>
-                                        <p class="card-text text-left">{this.state.books[2].description} </p>
+                                        <h5 className="card-title font-italic text-left">- By {this.state.books[2].authors} </h5>
+                                        <p className="card-text text-left">{this.state.books[2].description} </p>
                                         <div className="mt-auto ml-auto">
-                                            <a href={this.state.books[2].link} target="blank" class="btn btn-primary mr-3">Check It Out</a>
+                                            <a href={this.state.books[2].link} target="blank" className="btn btn-primary mr-3">Check It Out</a>
                                             <button className="btn btn-success" onClick={() => this.saveBook(2)}>Save </button>
                                         </div>
                                     </div>

@@ -1,16 +1,24 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Search from "./components/Search/Search";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import Results from "./components/Results";
+import Saved from "./components/Saved";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Search />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Results} />
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="*" component={Results} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

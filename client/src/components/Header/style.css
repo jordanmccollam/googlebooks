@@ -12,3 +12,10 @@
 h1 {
     text-shadow: 1px 1px 3px black;
 }
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}

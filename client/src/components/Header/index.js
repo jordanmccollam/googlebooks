@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css"
+import "./style.css"
 
 function Header() {
     return(
@@ -23,6 +23,16 @@ function Header() {
                 <span className="text-success">c</span>
                 <span className="text-danger">h</span>
             </h1>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-1 border-bottom border-primary mr-3">
+                        <a href="/" className="text-primary">Search</a>
+                    </div>
+                    <div className="col-1 border-bottom border-success">
+                        <a href="/saved" className="text-success">Saved</a>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
